@@ -1,4 +1,4 @@
-# Ai-Career-And-Community-Assistent
+# Ai-Career-And-Community-Assistant
 
 
 An AI-powered Streamlit application to boost your tech career journey!  
