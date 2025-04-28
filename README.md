@@ -71,7 +71,6 @@ graph TD
     A --> D[Event Search - Eventbrite & GDG]
     B --> E[Knowledge Base Fallback]
     C --> G[Resume Summary Output]
-
 ```
 
 > 🖼️ **Visualization**: The user interacts with the Streamlit UI ➡️ which talks to the LLM, Resume Analyzer, and Event Engines.
