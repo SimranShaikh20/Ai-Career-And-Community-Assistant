@@ -66,11 +66,12 @@ Llama3-8B (via Groq) was selected because it **balances performance, speed, and 
 
 ```mermaid
 graph TD
-    A[User Interaction - Streamlit App] --> B[LLM - Groq API (Llama3)]
-    A --> C[Resume Upload - PyPDF2 Extraction]
-    A --> D[Event Search - Eventbrite & GDG]
-    B --> E[Knowledge Base Fallback]
-    C --> G[Resume Summary Output]
+    A[User Interaction - Streamlit App] -->|Career Questions| B[LLM - Groq API (Llama3)]
+    A -->|Resume Upload| C[Resume Parser - PyPDF2]
+    A -->|Event Search| D[Event APIs - Eventbrite/GDG]
+    B --> E[AI Response]
+    C --> F[Resume Analysis]
+    D --> G[Event Recommendations]
 ```
 
 > 🖼️ **Visualization**: The user interacts with the Streamlit UI ➡️ which talks to the LLM, Resume Analyzer, and Event Engines.
