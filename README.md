@@ -9,55 +9,55 @@ Helps with **job searching**, **resume feedback**, **event discovery**, and **ca
 
 The **AI Career and Community Assistant** is your personal AI companion designed to:
 
-- 🔍 **Find Jobs**: Smart keyword-based job suggestions.
-- 📄 **Analyze Resumes**: Get AI-powered resume feedback instantly.
-- 🗓️ **Explore Tech Events**: Discover hackathons, meetups, and more.
-- 🤖 **Ask Career FAQs**: Instant answers to common career questions.
+* 🔍 **Find Jobs**: Smart keyword-based job suggestions.
+* 📄 **Analyze Resumes**: Get AI-powered resume feedback instantly.
+* 🗓️ **Explore Tech Events**: Discover hackathons, meetups, and more.
+* 🤖 **Ask Career FAQs**: Instant answers to common career questions.
 
 ---
 
 ## 🤖 Why Llama3-8B via Groq?
 
-- 🎯 **Accurate**: Delivers context-rich, intelligent responses.
-- ⚡ **Lightning Fast**: Ultra-fast inference with Groq.
-- 💸 **Cost-Efficient**: Great performance at lower cost than GPT-4.
-- 🛠️ **Customizable**: Open weights for future enhancements.
+* 🎯 **Accurate**: Delivers context-rich, intelligent responses.
+* ⚡ **Lightning Fast**: Ultra-fast inference with Groq.
+* 💸 **Cost-Efficient**: Great performance at lower cost than GPT-4.
+* 🛠️ **Customizable**: Open weights for future enhancements.
 
 ---
 
 ## 🎯 Key Benefits
 
-- 💼 Personalized job search suggestions
-- 📈 On-the-spot resume feedback
-- 🧳 Stay updated on relevant tech events
-- 🧠 Get reliable answers to career questions
-- 🎨 Sleek and responsive Streamlit UI
+* 💼 Personalized job search suggestions
+* 📈 On-the-spot resume feedback
+* 🧳 Stay updated on relevant tech events
+* 🧠 Get reliable answers to career questions
+* 🎨 Sleek and responsive Streamlit UI
 
 ---
 
 ## 🧠 Core Features
 
-| 💡 Feature              | 📝 Description                                                                 |
-|------------------------|---------------------------------------------------------------------------------|
-| 🤖 **AI Q&A Assistant**     | Answers your tech career questions instantly using LLM.                      |
-| 📄 **Resume Analyzer**      | Upload your resume (PDF) for instant, actionable feedback.                  |
-| 🔍 **Smart Job Search**     | Extracts relevant skills from your input for better job matches.            |
-| 📚 **FAQ Knowledge Base**   | Preloaded answers to common tech and career questions.                      |
-| 🧹 **PDF Text Extractor**   | Extracts and processes resume content using PyPDF2.                          |
+| 💡 Feature                | 📝 Description                                                   |
+| ------------------------- | ---------------------------------------------------------------- |
+| 🤖 **AI Q&A Assistant**    | Answers your tech career questions instantly using LLM.         |
+| 📄 **Resume Analyzer**     | Upload your resume (PDF) for instant, actionable feedback.      |
+| 🔍 **Smart Job Search**    | Extracts relevant skills from your input for better job matches.|
+| 📚 **FAQ Knowledge Base**  | Preloaded answers to common tech and career questions.          |
+| 🧹 **PDF Text Extractor**  | Extracts and processes resume content using PyPDF2.             |
 
 ---
 
 ## ⚙️ Tech Stack
 
-| ⚙️ Tool/Library        | 🔧 Usage                                      |
-|------------------------|-----------------------------------------------|
-| 🐍 Python 3.10+         | Core programming language                     |
-| 🌐 Streamlit            | Frontend web app framework                    |
-| 🧠 Groq (Llama3-8B)     | Language model for Q&A and feedback           |
-| 🎫 Eventbrite API       | Tech event discovery                         |
-| 📄 PyPDF2               | Extracting text from resume PDFs             |
-| 🧽 BeautifulSoup        | Web scraping for job listings                 |
-| 🪵 Logging              | Debugging and monitoring                     |
+| ⚙️ Tool/Library     | 🔧 Usage                             |
+| ------------------- | ------------------------------------ |
+| 🐍 Python 3.10+     | Core programming language            |
+| 🌐 Streamlit        | Frontend web app framework           |
+| 🧠 Groq (Llama3-8B) | Language model for Q&A and feedback  |
+| 🎫 Eventbrite API   | Tech event discovery                 |
+| 📄 PyPDF2           | Extracting text from resume PDFs     |
+| 🧽 BeautifulSoup    | Web scraping for job listings        |
+| 🪵 Logging          | Debugging and monitoring             |
 
 ---
 
@@ -76,68 +76,67 @@ The **AI Career and Community Assistant** is your personal AI companion designed
 
 ---
 
-## 🔑 API Keys Required
+## 🛠️ Setup Instructions
 
-| 🔐 Service  | 🧩 Purpose                      | 🔗 Get Key From                                |
-|------------|----------------------------------|------------------------------------------------|
-| Groq LLM   | AI-based resume & Q&A responses | [Groq Console](https://console.groq.com/)      |
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/SimranShaikh20/Ai-Career-And-Community-Assistent.git
+   cd career-community-assistant
+```
+
+2. **Create Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # (Windows: venv\Scripts\activate)
+```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Add Environment Variables**
+   - Create a `.env` file:
+     ```
+     GROQ_API_KEY=your_groq_api_key
+     
+     ```
+
+5. **Run the App**
+   ```bash
+   streamlit run app.py
+   ```
 
 ---
 
-## 🛠️ Setup Instructions
+## ✨ Future Improvements
 
-### 1. Clone the Repository
+- ✅ Add personalized event recommendations based on skills
+- ✅ Integrate LinkedIn job scraping
+- ✅ Add multi-language support (Hindi, English, etc.)
+- ✅ Dark mode for Streamlit app
 
-```bash
-git clone https://github.com/SimranShaikh20/Ai-Career-And-Community-Assistent.git
-cd Ai-Career-And-Community-Assistent
-
-
-### 2. Create Virtual Environment
-
-```bash
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-
-
-### 3. Install Dependencies
-
-Install all required Python packages:
-
-```bash
-pip install -r requirements.txt
-
-
-### 4. Add Environment Variables
-
-Create a `.env` file in the project root with the following content:
-
-```bash
-GROQ_API_KEY=your_groq_api_key
-
-### 5. Run the App
-
-```bash
-streamlit run app.py
+---
 
 ## 🤝 Contribution Guide
 
-Contributions are welcome! 🙌
-
-- Fork the repo, make your changes, and open a PR. Please ensure tests are updated accordingly.
+Contributions are welcome! 🎉  
+Feel free to fork, create a feature branch, and submit a Pull Request.  
+Please make sure to update tests as appropriate.
 
 ---
 
 ## 📜 License
 
-Released under the MIT License – free for personal and commercial use.
+This project is licensed under the **MIT License**.  
+Free to use and modify!
 
 ---
 
-## 👩‍💻 Author
+## 👨‍💻 Author
 
-Made with 💖 by Simran Shaikh
+Made with 💖 by **Simran Shaikh**
+
+> If you like it, don't forget to ⭐ the repo!
 
 ---
-
-## ⭐ If you found this helpful, star the repo and share it with others!
