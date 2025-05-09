@@ -93,13 +93,12 @@ git clone https://github.com/SimranShaikh20/Ai-Career-And-Community-Assistent.gi
 cd Ai-Career-And-Community-Assistent
 
 
-## 🛠️ Setup Instructions (Continued)
-
 ### 2. Create Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # For Windows: venv\Scripts\activate
+
 
 ### 3. Install Dependencies
 
@@ -108,25 +107,37 @@ Install all required Python packages:
 ```bash
 pip install -r requirements.txt
 
+
 ### 4. Add Environment Variables
-Create a .env file in the project root with the following content:
- ```bash
+
+Create a `.env` file in the project root with the following content:
+
+```bash
 GROQ_API_KEY=your_groq_api_key
 
-
 ### 5. Run the App
+
 ```bash
 streamlit run app.py
 
+## 🤝 Contribution Guide
 
-### 🤝 Contribution Guide
-- Contributions are welcome! 🙌
+Contributions are welcome! 🙌
+
 - Fork the repo, make your changes, and open a PR. Please ensure tests are updated accordingly.
 
-### 📜 License
-- Released under the MIT License – free for personal and commercial use.
+---
 
-### 👩‍💻 Author
-- Made with 💖 by Simran Shaikh
+## 📜 License
 
-### ⭐ If you found this helpful, star the repo and share it with others!
+Released under the MIT License – free for personal and commercial use.
+
+---
+
+## 👩‍💻 Author
+
+Made with 💖 by Simran Shaikh
+
+---
+
+## ⭐ If you found this helpful, star the repo and share it with others!
