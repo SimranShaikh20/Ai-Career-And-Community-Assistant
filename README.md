@@ -1,7 +1,7 @@
 # 🚀 AI Career and Community Assistant
 
 An AI-powered **Streamlit** application to supercharge your tech career journey!  
-Helps with **job searching**, **resume feedback**, **event discovery**, and **career Q&A** – all in one place. ✨
+Helps with **job searching**, **resume feedback** and **career Q&A** – all in one place. ✨
 
 ---
 [Live App ](https://ai-career-and-community-assistant-7voz2ccvpofdntk7rntseh.streamlit.app/)
@@ -56,25 +56,30 @@ The **AI Career and Community Assistant** is your personal AI companion designed
 | 🐍 Python 3.10+     | Core programming language            |
 | 🌐 Streamlit        | Frontend web app framework           |
 | 🧠 Groq (Llama3-8B) | Language model for Q&A and feedback  |
-| 🎫 Eventbrite API   | Tech event discovery                 |
 | 📄 PyPDF2           | Extracting text from resume PDFs     |
 | 🧽 BeautifulSoup    | Web scraping for job listings        |
-| 🪵 Logging          | Debugging and monitoring             |
 
 ---
 
 ## 🗂️ Folder Structure
 
 ```bash
-.
+ai-career-and-community-assistant/
+├── app.py                   # 🚀 Main Streamlit app entry point
+├── .env                     # 🔐 Environment variables (not committed)
+├── requirements.txt         # 📦 Python dependencies
+├── README.md                # 📘 Project documentation
+
 ├── utils/
-│   ├── events_utils.py     # 📅 Fetches events from Eventbrite and GDG APIs
-│   ├── resume_utils.py     # 📄 Extracts text and insights from resumes
-│   └── llm_utils.py        # 🤖 Handles LLM interactions and FAQ responses
-│
-├── app.py                  # 🚀 Main Streamlit app
-├── requirements.txt        # 📦 Python dependencies
-└── README.md               # 📘 Project documentation
+│   ├── events_utils.py      # 📅 Fetches tech events from APIs
+│   ├── resume_utils.py      # 📄 Resume parsing and feedback logic
+│   └── llm_utils.py         # 🤖 Interacts with LLM for Q&A and feedback
+
+├── pages/
+│   ├── job_search.py        # 🔍 Smart job search UI
+│   ├── resume_analyzer.py   # 📄 Resume upload and analysis page
+│   ├── event_finder.py      # 🗓️ Event discovery page
+│   └── community.py         # 🧠 Career Q&A assistant
 
 ---
 
@@ -90,7 +95,7 @@ The **AI Career and Community Assistant** is your personal AI companion designed
    ```bash
    python -m venv venv
    source venv/bin/activate   # (Windows: venv\Scripts\activate)
-```
+   ```
 
 3. **Install Dependencies**
    ```bash
@@ -138,7 +143,5 @@ Free to use and modify!
 ## 👨‍💻 Author
 
 Made with 💖 by **Simran Shaikh**
-
-> If you like it, don't forget to ⭐ the repo!
 
 ---
