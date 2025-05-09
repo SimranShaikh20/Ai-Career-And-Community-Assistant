@@ -4,7 +4,9 @@ An AI-powered **Streamlit** application to supercharge your tech career journey!
 Helps with **job searching**, **resume feedback**, **event discovery**, and **career Q&A** – all in one place. ✨
 
 ---
+[Live App ](https://ai-career-and-community-assistant-7voz2ccvpofdntk7rntseh.streamlit.app/)
 
+---
 ## 📌 Project Overview
 
 The **AI Career and Community Assistant** is your personal AI companion designed to:
